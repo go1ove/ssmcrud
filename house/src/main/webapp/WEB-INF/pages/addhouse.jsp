@@ -214,7 +214,7 @@
         form.on("submit(addHouseRecord)", function (data) {
             $.post("addHouseRecord", $("#addHouseForm").serialize(), function (res) {
                 if (res == "OK") {
-                    alert("添加房源信息成功！");
+                    //alert("添加房源信息成功！");
                     layer.msg("添加房源信息成功！", {
                         icon: 1, end: function () {
                             window.location.href = "addHouse";

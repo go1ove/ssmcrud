@@ -18,14 +18,14 @@
                 <div class="layui-form-item">
                     <label class="layui-form-label">账&emsp;号</label>
                     <div class="layui-input-block">
-                        <input type="text" name="username" required lay-verify="required" placeholder="请输入管理员账号"
+                        <input type="text" name="username" required lay-verify="required" value="666666" placeholder="请输入管理员账号"
                                autocomplete="off" class="layui-input">
                     </div>
                 </div>
                 <div class="layui-form-item">
                     <label class="layui-form-label">密&emsp;码</label>
                     <div class="layui-input-block">
-                        <input type="password" name="userpwd" required lay-verify="required" placeholder="请输入管理员密码"
+                        <input type="password" name="userpwd" required lay-verify="required" value="55555" placeholder="请输入管理员密码"
                                autocomplete="off" class="layui-input">
                     </div>
                 </div>

@@ -288,7 +288,7 @@
             }
             $.post("addOrder", {id: $(".HID").val()}, function (data) {
                 if (data == "OK") {
-                    alert("恭喜你，预定成功！");
+                    //alert("恭喜你，预定成功！");
                     layer.alert("恭喜你，预定成功！", {icon: 1});
                     $(".order-btn").addClass("layui-btn-disabled");
                     $(".order-btn").html("你已成功预定");

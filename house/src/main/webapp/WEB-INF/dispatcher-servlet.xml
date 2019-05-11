@@ -21,16 +21,16 @@
             <mvc:exclude-mapping path="/css/**"/>
             <mvc:exclude-mapping path="/img/**"/>
             <mvc:exclude-mapping path="/layui/**"/>
-            <bean class="com.house.interceptor.UserInterceptor"></bean>
+            <bean class="com.house.interceptor.UserInterceptor"/>
         </mvc:interceptor>
     </mvc:interceptors>
 
     <!-- 对静态资源放行 -->
     <mvc:default-servlet-handler/>
-    <mvc:resources location="/css/" mapping="/css/**"></mvc:resources>
-    <mvc:resources location="/layui/" mapping="/layui/**"></mvc:resources>
-    <mvc:resources location="/js/" mapping="/js/**"></mvc:resources>
-    <mvc:resources location="/img/" mapping="/img/**"></mvc:resources>
+    <mvc:resources location="/css/" mapping="/css/**"/>
+    <mvc:resources location="/layui/" mapping="/layui/**"/>
+    <mvc:resources location="/js/" mapping="/js/**"/>
+    <mvc:resources location="/img/" mapping="/img/**"/>
     <bean
             class="org.springframework.web.servlet.view.InternalResourceViewResolver"
             p:prefix="/WEB-INF/pages/"/>

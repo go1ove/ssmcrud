@@ -55,7 +55,7 @@
             var currPage = dt.config.page.curr;
 
             if (layEvent === "view") {
-                window.open("toIndexPage");
+                window.open("toDetailsPage?id="+data.hID);
             }
             if (layEvent === "edit") {
                 window.location.href = "toUpdateHousePage?hID=" + data.hID;

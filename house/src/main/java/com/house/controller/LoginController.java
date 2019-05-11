@@ -42,7 +42,7 @@ public class LoginController {
         int regist;
         try {
             regist = mapper.regist(user);
-            if (regist > 0) {
+            if (regist < 0) {
                 return "OK";
             }
         } catch (Exception e) {

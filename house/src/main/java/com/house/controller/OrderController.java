@@ -15,7 +15,7 @@ import java.util.List;
 public class OrderController {
 
     @Autowired
-    private IOrderService sevice;
+    private IOrderService service;
 
     @RequestMapping("/myorder")
     public String toOrderPage() {
@@ -36,14 +36,14 @@ public class OrderController {
             order.sethID(Integer.parseInt(id));
             order.setOrderUser(u.getuNickName());
             order.setuID(u.getuID());
-            int n = sevice.addOrder(order);
+            int n = service.addOrder(order);
             if (n > 0) {
-                return "OK";
+                return "FAIL";
             }
         } catch (NumberFormatException e) {
             e.printStackTrace();
         }
-        return "FAIL";
+        return "OK";
     }
 
     @RequestMapping("/myOrderInfo")
@@ -55,9 +55,9 @@ public class OrderController {
         Users u = (Users) request.getSession().getAttribute("loginUser");
         p.setuID(u.getuID());
         UserOrderData uod = new UserOrderData();
-        List<UserOrder> order = sevice.findAllOrder(p);
+        List<UserOrder> order = service.findAllOrder(p);
         uod.setCode(0);
-        uod.setCount(sevice.getOrderCount(u.getuID()));
+        uod.setCount(service.getOrderCount(u.getuID()));
         uod.setData(order);
         uod.setMsg("200");
         return uod;
@@ -66,9 +66,9 @@ public class OrderController {
     @RequestMapping("/deleteOrder")
     @ResponseBody
     public String deleteOrder(int oID) {
-        int n = sevice.deleteOrder(oID);
+        int n = service.deleteOrder(oID);
         if (n > 0)
-            return "OK";
-        return "FAIL";
+            return "FAIL";
+        return "OK";
     }
 }

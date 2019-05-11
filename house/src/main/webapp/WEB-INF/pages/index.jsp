@@ -45,8 +45,9 @@
     <div carousel-item>
         <div style="background: url('img/banner2.jpg')no-repeat center/cover"></div>
         <div style="background: url('img/banner1.jpg')no-repeat center/cover"></div>
-        <div style="background: url('img/banner3.jpg')no-repeat center/cover"></div>
-        <div style="background: url('img/banner4.jpg')no-repeat center/cover"></div>
+        <div style="background: url('img/banner3.png')no-repeat center/cover"></div>
+        <div style="background: url('img/banner4.png')no-repeat center/cover"></div>
+        <div style="background: url('img/banner5.jpg')no-repeat center/cover"></div>
     </div>
 </div>
 
@@ -63,7 +64,7 @@
                         <div class="layui-form-item">
                             <label class="layui-form-label">用户名</label>
                             <div class="layui-input-block">
-                                <input type="text" name="username" required lay-verify="required" placeholder="请输入用户名"
+                                <input type="text" name="username" required lay-verify="required" value="zhangsan" placeholder="请输入用户名"
                                        autocomplete="off" class="layui-input">
                             </div>
                         </div>
@@ -71,7 +72,7 @@
                         <div class="layui-form-item">
                             <label class="layui-form-label">密码</label>
                             <div class="layui-input-block">
-                                <input type="password" name="password" required lay-verify="required"
+                                <input type="password" name="password" required lay-verify="required" value="123456"
                                        placeholder="请输入密码" autocomplete="off" class="layui-input">
                             </div>
                         </div>
